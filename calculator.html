@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+  <div class="container">
+    <input class="input" type="text" readonly id="Display">
+    <div class="cal-button">
+      <button class="button button2" onclick="
+      currdisplay=currdisplay='' ;
+        document.querySelector('#Display').value=currdisplay;">AC</button>
+      <button class="button button2" onclick="
+       currdisplay=currdisplay+'%';
+       document.querySelector('#Display').value=currdisplay;">%</button>
+      <button class="button button2" onclick="
+       currdisplay-=currdisplay;
+       document.querySelector('#Display').value=currdisplay;">x</button>
+      <button class="button button2" onclick="
+      currdisplay=currdisplay+'/';
+       document.querySelector('#Display').value=currdisplay;">÷</button>
+
+      <button class="button" onclick="
+      currdisplay=currdisplay+'7';
+      document.querySelector('#Display').value=currdisplay;">7</button>
+      <button class="button" onclick="
+      currdisplay=currdisplay+'8';
+       document.querySelector('#Display').value=currdisplay;">8</button>
+      <button class="button" onclick="
+      currdisplay=currdisplay+'9';
+       document.querySelector('#Display').value=currdisplay;">9</button>
+      <button class="button button2" onclick="
+ currdisplay=currdisplay+'*';
+ document.querySelector('#Display').value=currdisplay;
+      ">*</button>
+      <button class="button" onclick="
+       currdisplay=currdisplay+'4';
+       document.querySelector('#Display').value=currdisplay;
+      ">4</button>
+      <button class="button" onclick="
+       currdisplay=currdisplay+'5';
+       document.querySelector('#Display').value=currdisplay;">5</button>
+      <button class="button" onclick="
+       currdisplay=currdisplay+'6';
+       document.querySelector('#Display').value=currdisplay;">6</button>
+      <button class="button button2" onclick="
+       currdisplay=currdisplay+'-';
+       document.querySelector('#Display').value=currdisplay;
+      ">-</button>
+      <button class="button" onclick="
+      currdisplay=currdisplay+'1';
+      document.querySelector('#Display').value=currdisplay;">1</button>
+      <button class="button" onclick="
+       currdisplay=currdisplay+'2';
+       document.querySelector('#Display').value=currdisplay;
+      ">2</button>
+      <button class="button" onclick=" currdisplay=currdisplay+'3';
+       document.querySelector('#Display').value=currdisplay;">3</button>
+      <button class="button button2" onclick="
+       currdisplay=currdisplay+'+';
+       document.querySelector('#Display').value=currdisplay;
+      ">+</button>
+      <button class="button" onclick="
+       currdisplay=currdisplay+'00';
+       document.querySelector('#Display').value=currdisplay;
+      ">00</button>
+      <button class="button" onclick="
+       currdisplay=currdisplay+'0';
+       document.querySelector('#Display').value=currdisplay;
+      ">0</button>
+      <button class="button button2" onclick="
+       currdisplay=currdisplay+'.';
+       document.querySelector('#Display').value=currdisplay;
+      ">.</button>
+      <button class="button button3" onclick="
+      currdisplay=eval(currdisplay);
+      document.querySelector('#Display').value=currdisplay;
+      ">=</button>
+
+    </div>
+  </div>
+
+
+  <script src="calculator.js"></script>
+</body>
+
+</html>
